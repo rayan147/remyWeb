@@ -19,6 +19,7 @@
 * {
   box-sizing: border-box;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   color: white;
@@ -27,6 +28,7 @@ body {
   line-height: 1.625;
   overflow-x: hidden;
   background: black;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -267,7 +269,9 @@ a {
 }
 .header_area .navbar .nav .nav-item:hover .nav-link,
 .header_area .navbar .nav .nav-item.active .nav-link {
-  color: #e6f716;
+  color: #000;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
 }
 .header_area .navbar .nav .nav-item.submenu {
   position: relative;
@@ -328,7 +332,7 @@ a {
   background: #fe4a49;
 }
 .header_area .navbar .nav .nav-item.submenu ul .nav-item.active .nav-link {
-  color: #fff;
+  color: #0000;
 }
 .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
   line-height: 45px;
@@ -344,8 +348,8 @@ a {
   border-bottom: none;
 }
 .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-  background: #fe4a49;
-  color: #fff;
+  background: #000;
+  color: #000;
 }
 @media (min-width: 992px) {
   .header_area .navbar .nav .nav-item.submenu:hover ul {
@@ -466,9 +470,8 @@ a {
   color: #fff;
 }
 .img-fluid__hero {
-  margin-top: 9rem;
   margin-bottom: 1rem;
-  height: 100vh;
+  height: 80vh;
 }
 .hero-banner {
   background: black;
@@ -700,7 +703,7 @@ a {
 }
 @media (min-width: 1200px) {
   .about__img {
-    left: 165px;
+    left: 35px;
   }
 }
 .about__img--small {
@@ -2385,17 +2388,26 @@ a {
 .nav-item {
   color: red;
 }
+canvas {
+  display: block;
+  width: 100vw;
+  height: 30vh;
+  z-index: -1;
+}
 .cardContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
-  align-items: flex-start;
+  margin: 1.5rem;
+  padding: 1rem;
+  align-items: center;
 }
 .logo-footer {
   height: 20vh;
   width: 15vw;
 }
+
 .logo--footer__container {
   display: flex;
   flex-direction: column-reverse;
@@ -2403,4 +2415,33 @@ a {
   margin-left: 37rem;
   margin-top: 3rem;
 }
-/*# sourceMappingURL=style.css.map */
+.logo--footer__container :hover {
+  transform: scale(1.3);
+  transition: all 0.6s ease-in-out;
+}
+.img-fluid {
+  transition: all 0.2s ease-in-out;
+  margin: 0 auto;
+}
+.img-fluid:hover {
+  transform: scale(1.1);
+}
+.card {
+  background-color: black;
+}
+.list-group-item {
+  background-color: black;
+}
+.img-fluid__double {
+  /* width: 60vw;
+  height: 50vh; */
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  justify-content: center;
+}
+.card__price{
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}

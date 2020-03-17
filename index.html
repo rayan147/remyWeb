@@ -3,10 +3,15 @@
 <head>
   
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SuperTrolin</title>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+
   <script
+
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
@@ -24,18 +29,21 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- ================ start header Area ================= -->  
+  <!-- ================ start text-whiteArea ================= -->  
 	<header class="header_area sticky-header">
 		<div class="main_menu">
   
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
+        
+				<div  class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div id="hero__image">
           <a class="navbar-brand logo_h" href="index.html"><img src="https://supertrolinimages.s3.amazonaws.com/logo2.png" alt="40" width="60"  class=img-fuild></a>
+          </div>
           <nav class="navbar-brand mb-0">
             <h2 class="header">SuperTrolin</h2>
           </nav>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -43,34 +51,40 @@
 					</button>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item "><a class="nav-link " href="index.html" >Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-							<li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+						<ul class="nav navbar-nav  ml-auto">
+							<li class="nav-item dropdown">
+                <a class="home__links nav-link " href="index.html"  >Home <span class="sr-only">(current)</span>
+              </a>
+            </li>
+							<li class=" nav-item"><a class="home__links nav-link" href="#about">About</a></li>
+							<li class=" nav-item"><a class="home__links nav-link" href="#service">Service</a></li>
+              <li class=" nav-item"><a class="home__links nav-link" href="#contact">Contact</a></li>
 
 					</div>
 				</div>
 			</nav>
 		</div>
-	</header>
+  </header>
+  <header>
+    
+  </header>
   <!-- ================ end header Area ================= -->  
   
   <main class="site-main">
     
     <!-- ================ start hero banner Area ================= -->    
     <section class="hero-banner">
-      <div class="container ">
+      <div class="container mr-1 mt-5 ">
         <div class="row">
-          <div class="col-md-6">
-            <div class="hero-banner__img">
-              <img class="img-fluid img-fluid__hero ml-1" src="https://supertrolinimages.s3.amazonaws.com/social6.jpg" alt="" >
+          <div class="col  mt-5">
+            <div  id="hero-banner__img" class="hero-banner__img">
+              <img class="img-fluid img-fluid__hero" src="https://supertrolinimages.s3.amazonaws.com/hero.png" alt="" >
             </div>
           </div>
-          <div class="col-md-6  mb-5 pl-xl-4 ">
-            <div class="hero-banner__content ">
-              <h1  class="header">We Specialize In All Phase Of Children's Entertainment </h1>
-              <p class="text-white">Our company specializes in all types of entertainment for children, families and businesses, offering entertainment
+          <div  id="intro" class="col col-sm-5 mb-5 pl-xl-4 ">
+            <div class="hero-banner__content mb-5 justify-content-sm-center">
+              <h1  class="header justify-content-md-center">We Specialize In All Phases Of Children's Entertainment </h1>
+              <p class=" header">Our company specializes in all types of entertainment for children, families and businesses, offering entertainment
               for all types of children's activity.
 </p>
               <!-- <button class="button button-hero subHeader">Reservation</button> -->
@@ -84,28 +98,33 @@
 
 
     <!-- ================ start about section ================= -->    
-    <section id="about" class="section-margin about-wrapper">
-      <div class="container ">
+    <section  class="section-margin about-wrapper">
+
+      <div class="container m-2 ">
         <div class="row">
-          <div class="col-4 col-sm-6 col-md-4 col-lg-5  mr-sm-5 mb-md-5  mb-lg-0">
+          <div class="col col-sm-10 col-md-4 col-lg-5  mr-sm-5 mb-md-5  mb-lg-0">
+
             <div class="about__content">
               <div class="section-intro">
-                <h4 class="section-intro__title subHeader">About Us</h4>
-                <h2  class="section-intro__subtitle header">We Are Entertainers, Joy Is  Our Passion</h2>
+                <div id="about">
+                <h4 class="section-intro__title subHeader justify-content-sm-center">About Us</h4>
+                <h2  class="section-intro__subtitle header mt-5">We Are Entertainers, Joy Is  Our Passion</h2>
+                </div>
               </div>
-              <p>Super Trolin Entertainment is a company of clowns, magicians and professional animators, dedicated to children's
+              <p class="ms-mr-4 text-center">Super Trolin Entertainment is a company of clowns, magicians and professional animators, dedicated to children's
               entertainment and entertainment with the main mission of educating with fun.</p>
               <!-- <a class="button subHeader" href="#">Learn More</a> -->
             </div>
           </div>
-          <div class="col-12 col-sm-4 col-md-3 offset-lg-2">
-            <div class="about__img">
-              <img class="img-fluid" src="https://supertrolinimages.s3.amazonaws.com/IMG-20180320-WA0053.jpg" alt="300" width="300">
-              <img  src="https://supertrolinimages.s3.amazonaws.com/barber-frame.jpg"  alt="200"  witdth="200"class="about__img--small img-fluid">
+          <div class="col col-sm-4 col-md-3 offset-lg-2">
+            <div  class="about__img">
+              <img class="img-fluid rounded" src="https://supertrolinimages.s3.amazonaws.com/IMG-20180320-WA0053.jpg"  alt="Responsive image">
+              <img  src="https://supertrolinimages.s3.amazonaws.com/barber-frame.jpg"   alt="Responsive image"  class="img-fluid rounded img-fluid__double">
             </div>
           </div>
         </div>
-      </div>
+  
+  </div>
     </section>
     <!-- ================ end about section ================= -->    
 
@@ -118,7 +137,7 @@
         <div class="row justify-content-center align-items-center flex-column text-center">
           <h3 >View Our Work</h3>
           <a id="play-home-video" class="video-play-button" href="https://www.youtube.com/watch?v=6Uz1l5H_Yc4">
-            <img src="https://supertrolinimages.s3.amazonaws.com/play-icon.png" alt="">
+            <img src="https://supertrolinimages.s3.amazonaws.com/play-icon.png" alt="Responsive image">
           </a>
           <p>01:00</p>
         </div>
@@ -130,33 +149,69 @@
       <div class="container">
         <h1 class=" section-intro__title subHeader">Come And Join Us </h1>
         <h2 class="header">#SuperTrolin</h2>
-        <div class="row mt-4">
-          <div class="col-6 col-lg-3 mb-4">
-            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20180320-WA0052.jpg"  class="img-fluid rounded">
+        <div   class="row mt-4">
+          <div id="GalleryImage"  class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20180320-WA0052.jpg"  class="img-fluid rounded" alt="Responsive image">
           </div>
           <div class="col-6 col-lg-3 mb-4">
-            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20180320-WA0053.jpg" class="img-fluid  rounded" alt="300"> 
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20180320-WA0053.jpg" class="img-fluid  rounded" alt="Responsive image"> 
           </div>
           <div class="col-6 col-lg-3 mb-4">
-            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20180320-WA0054.jpg" class="img-fluid rounded " alt="300">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20180320-WA0054.jpg" class="img-fluid rounded " alt="Responsive image">
           </div>
           <div class="col-6 col-lg-3 mb-4">
-            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20180320-WA0097.jpg" class="img-fluid rounded " alt="300">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20180320-WA0097.jpg" class="img-fluid rounded " alt="Responsive image">
           </div>
           <div class="col-6 col-lg-3 mb-4">
-            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20180321-WA0019.jpg" class="img-fluid  rounded" alt="300">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20180321-WA0019.jpg" class="img-fluid  rounded" alt="Responsive image">
           </div>
           <div class="col-6 col-lg-3 mb-4">
-            <img src="https://supertrolinimages.s3.amazonaws.com/social1.jpg" class="img-fluid rounded " alt="300">
+            <img src="https://supertrolinimages.s3.amazonaws.com/social1.jpg" class="img-fluid rounded " alt="Responsive image">
           </div>
           <div class="col-6 col-lg-3 mb-4">
-            <img src="https://supertrolinimages.s3.amazonaws.com/social2.jpg" class="img-fluid  rounded" alt="300">
+            <img src="https://supertrolinimages.s3.amazonaws.com/social2.jpg" class="img-fluid  rounded" alt="Responsive image">
           </div>
           <div class="col-6 col-lg-3 mb-4">
-            <img src="https://supertrolinimages.s3.amazonaws.com/social8.jpg" class="img-fluid rounded " alt="300">
+            <img src="https://supertrolinimages.s3.amazonaws.com/social8.jpg" class="img-fluid rounded " alt="Responsive image">
           </div>
           <div class="col-6 col-lg-3 mb-4">
-            <img src="img/gallery/social8.jpg" class="img-fluid rounded " alt="300">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0236.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0234.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0230.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0229.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0214.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0227.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0219.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0226.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0224.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0228.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0212.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0210.jpg" class="img-fluid rounded " alt="Responsive image">
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img src="https://supertrolinimages.s3.amazonaws.com/IMG-20200219-WA0209.jpg" class="img-fluid rounded " alt="Responsive image">
           </div>
           </section>
   
@@ -193,85 +248,126 @@
   </section>
   
       <!-- ================ pricing section start ================= -->
-  <section class="section-margin--large pricing-relative">
-    <div class="container">
+  <section >
+    <div  id="service"class="container">
       <div class="section-intro pb-70px">
         <h4 class="section-intro__title subHeader">Pricing Plan</h4>
         <h2 class="section-intro__subtitle header" >Choose Your Favorite <span class="d-block">Package</span></h2>
       </div>
   <!-- test card div -->
-  <div class="container cardContainer">
-  <div class="card border-danger mb-3" style="max-width: 15rem;">
-    <h3 class="card-header bg-transparent border-danger text-dark">Package #1</h3>
-    <div class="card-body text-dark text-md-center">
-      <h5 class="card-title">One Hour Show</h5>
-      <p class="card-text">Standard Package</p>
+  <div  class="container shadow-lg p-3 mb-5 rounded">
+    <div  class="row row-cols-3">
+      <div  class="col-sm card__price">
+     
+  <div class="card  border-danger   mb-3 font-weight-bold" style="max-width: 18rem;">
+    
+    <h3 class="card-header   subHeader font-weight-bold  mt-3 text-center">Package #1</h3>
+    <div class="card-body text-md-center">
+      <h5  id="time" class="card subHeader font-weight-bold">One Hour Show</h5>
+      <p class="card-text subHeader font-weight-bold">Standard Package</p>
       <ul class="list-group">
-        <li>One hour show</li>
-        <li>Animation</li>
-        <li>Group Contests</li>
-        <li>Family games</li>
-        <li>Engage jokes with the audience</li>
-        <li>Balloons figures</li>
-        <li>Music (DJ,childish & Abiental)</li>
+        
+        <li class="list-group-item font-weight-bold">Animation</li>
+        <li class="list-group-item font-weight-bold">Group Contests</li>
+        <li class="list-group-item font-weight-bold">Family games</li>
+        <li class="list-group-item font-weight-bold">Engage jokes with the audience</li>
+        <li class="list-group-item font-weight-bold">Balloons figures</li>
+        <li class="list-group-item font-weight-bold">Music (DJ,childish & Abiental)</li>
       </ul>
     </div>
-    <div class="card-footer bg-transparent border-danger text-dark">
+    <div class="card-footer  header font-weight-bold">
       <ul><li>Just for the area of</li></ul>
       (New Jersey & New York)</div>
   </div>
-  <div class="card border-danger mb-3" style="max-width: 18rem; height: 100hv">
-    <h3 class="card-header bg-transparent border-danger text-dark">Package #2</h3>
-    <div class="card-body text-dark text-md-center">
-      <h5 class="card-title">One Hour And a Half Show</h5>
-      <p class="card-text">Standard Package</p>
+  </div>
+<!-- SECOND CARD -->
+    <div  class=" col-sm">
+  <div  class="card border-danger text-white mb-3" style="max-width: 18rem;">
+    <h3 class="card subHeader font-weight-bold  mt-3 text-center">Package #2</h3>
+    <div class="card-body  text-whitetext-md-center">
+      <h5 id="time" class="cardsubHeader subHeader font-weight-bold">One Hour And a Half Show</h5>
+      <p class="card-text subHeader font-weight-bold">Standard Package</p>
       <ul class="list-group">
-        <li>Animation</li>
-        <li>Group Contests</li>
-        <li>Family games</li>
-        <li>Engage jokes with the audience</li>
-        <li>Balloons figures</li>
-        <li>Music (DJ,childish & Abiental)</li>
-        <li>Sing Happy Birthday And Hit The Pinata</li>
+        <li  class="list-group-item font-weight-bold">Animation</li>
+        <li class="list-group-item font-weight-bold">Group Contests</li>
+        <li class="list-group-item font-weight-bold">Family games</li>
+        <li class="list-group-item font-weight-bold">Engage jokes with the audience</li>
+        <li class="list-group-item font-weight-bold">Balloons figures</li>
+        <li class="list-group-item font-weight-bold">Music (DJ,childish & Abiental)</li class="list-group-item font-weight-bold">
+        <li  class="list-group-item font-weight-bold">Sing Happy Birthday And Hit The Pinata</li>
       </ul>
     </div>
-    <div class="card-footer bg-transparent border-danger text-dark">
+    <div class="card-footer   header font-weight-bold">
       <ul><li>Just for the area of</li></ul>
       (New Jersey & New York)</div>
   </div>
+  </div>
+  <!-- THIRD CARD -->
+  <div  class="col-sm">
   <div class="card border-danger mb-3" style="max-width: 18rem;">
-    <h3 class="card-header bg-transparent border-danger text-dark">Package #3</h3>
-    <div class="card-body text-dark text-md-center">
-      <h5 class="card-title">One Hour And a Half Show</h5>
-      <p class="card-text">Standard Package</p>
-      <ul class="list-group">
-        <li>One hour show</li>
-        <li>Animation</li>
-        <li>Group Contests</li>
-        <li>Family games</li>
-        <li>Engage jokes with the audience</li>
-        <li>Balloons figures</li>
-        <li>Music (DJ,childish & Abiental)</li>
-        <li>Happy Birthday And Hit The</li> 
-        <li>A Sweet Cotton Machine Or Popcorn</li>
+
+    <h3 class="card  subHeader font-weight-bold mt-3 text-center">Package #3</h3>
+
+    <div class="card-body  text-white text-md-center">
+      <h5 id="time"class="card text-center subHeader font-weight-bold">One Hour And a Half Show</h5>
+      <p class="card-text  subHeader font-weight-bold">Standard Package</p>
+      <ul class="list-group list-group-flush">
+       
+        <li  class="list-group-item font-weight-bold">Animation</li>
+        <li class="list-group-item font-weight-bold">Group Contests</li>
+        <li class="list-group-item font-weight-bold">Family games</li>
+        <li class="list-group-item font-weight-bold">Engage jokes with the audience</li>
+        <li class="list-group-item font-weight-bold">Balloons figures</li>
+        <li class="list-group-item font-weight-bold">Music (DJ,childish & Abiental)</li>
+        <li class="list-group-item font-weight-bold">Happy Birthday And Hit The</li> 
+        <li class="list-group-item font-weight-bold">A Sweet Cotton Machine Or Popcorn</li>
       </ul>
     </div>
-    <div class="card-footer bg-transparent border-danger text-dark">
+    <div class="card-footer    header">
       <ul><li>Just for the area of</li></ul>
       (New Jersey & New York)</div>
+  </div>
+  </div>
   </div>
   </div>
 </section>
   <!-- ================ contact section start ================= -->
   <section class="section-margin">
     <div class="container">
-      <div class="d-none d-sm-block mb-5 pb-4">
+      <div class="d-none d-sm-block mb-5 pb-4 ">
         <div id="map" style="height: 520px;"></div>
 
         
          
           <script>
-         
+         function initMap() {
+            const uluru = { lat: 40.915551, lng: -74.166548 };
+            const grayStyles = [
+              {
+                featureType: "all",
+                stylers: [{ saturation: -80 }, { lightness: 50 }]
+              },
+              { elementType: "labels.text.fill", stylers: [{ color: "#A3B303" }] }
+            ];
+            const map = new google.maps.Map(document.getElementById("map"), {
+              center: { lat: 40.915551, lng: -74.166548 },
+              zoom: 10,
+              styles: grayStyles,
+              scrollwheel: false
+            });
+            const marker = new google.maps.Marker({
+              position: uluru,
+              map
+            });
+            const infoWindow = new google.maps.InfoWindow({
+              content: `<h3 class="text-center">SuperTrolin Entertainment
+              <br/> 
+              13 Park Ave, Paterson, NJ 07501</h3>`
+            });
+            marker.addListener("click", function () {
+              infoWindow.open(map, marker);
+            });
+          }
         </script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ6KaHmTvtJS_a3sDHpNHoW4Iid7awQ1M&callback=initMap"
@@ -280,6 +376,7 @@
       </div>
 
   </main>
+  <!-- <canvas id="c"></canvas> -->
   <!-- ================ contact section end ================= -->
 
      
@@ -292,28 +389,28 @@
       <div class="contact-info--container ">
       <div class="row ">
         <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
-          <h1 class="section-intro__subtitle header m-5">
-            Contact</h1>
+          <h1 class="section-intro__subtitle header m-5 font-weight-bold">
+            Contact Us</h1>
             <hr/>
           <div class="media contact-info ml-5">
-            <span class="contact-info__icon"><i class="ti-home"></i></span>
+            <span class="contact-info__icon"><i class="ti-home font-weight-bold text-dark"></i></span>
             <div class="media-body ">
-              <h3 class="header">New Jersey United States</h3>
-              <p class="header">Super Trolin Entertainment, 13 Park Ave, Paterson, NJ 07501</p>
-            </div>
-          </div>
-          <div class="media contact-info ml-5"">
-            <span class="contact-info__icon"><i class="ti-headphone"></i></span>
-            <div class="media-body">
-              <h3><a class="header" href="tel:8622089881">(862)208-9881</a></h3>
-              <p class="header">Mon to Fri 9am to 6pm</p>
+              <h3 class="font-weight-bold header">New Jersey United States</h3>
+              <p class="font-weight-bold header">Super Trolin Entertainment, 13 Park Ave, Paterson, NJ 07501</p>
             </div>
           </div>
           <div class="media contact-info ml-5">
-            <span class="contact-info__icon"><i class="ti-email"></i></span>
+            <span class="contact-info__icon"><i class="ti-headphone font-weight-bold text-dark"></i></span>
             <div class="media-body">
-              <h3><a href="mailto:supertrolin14@gmail.com" class="header">supertrolin14@gmail.com</a></h3>
-              <p class="header">Send us your Reservation anytime!</p>
+              <h3><a class="font-weight-bold header" href="tel:8622089881">(862)208-9881</a></h3>
+              <p class="font-weight-bold header">Mon to Fri 9am to 6pm</p>
+            </div>
+          </div>
+          <div class="media contact-info ml-5">
+            <span class="contact-info__icon"><i class="ti-email text-dark"></i></span>
+            <div class="media-body">
+              <h3><a href="mailto:supertrolin14@gmail.com" class="font-weight-bold header">supertrolin14@gmail.com</a></h3>
+              <p class="font-weight-bold header">Send us your Reservation anytime!</p>
             </div>
           </div>
           
@@ -324,7 +421,7 @@
       
       <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
         <div class="logo--footer__container">
-          <img class="logo-footer" src="https://supertrolinimages.s3.amazonaws.com/logo2.png"></img>
+          <img class="logo-footer  " src="https://supertrolinimages.s3.amazonaws.com/logo2.png"></img>
         </div>
       </div>
       </div>
@@ -344,16 +441,14 @@
       
       
       
-                <a class="gplus-ic text-danger" href="remyv14@gmail.com">
-                  <i class="fab fa-google fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                </a>
+                
       
                 <a class="li-ic text-danger" href="https://www.youtube.com/channel/UCkoQsJ0O7TNS53QRkej-2yA" target="_blank">
                   <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                 </a>
       
                 <a class="ins-ic text-muted" href="https://www.instagram.com/supertrolin/?hl=en" target="_blank">
-                  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x "> </i>
+                  <i class="fab fa-instagram fa-lg  mr-md-5 mr-3 fa-2x text-weight-bold "> </i>
                 </a>
                 <!--Pinterest-->
                 <a class="pin-ic text-success" href="tel:8622089881">
@@ -384,8 +479,17 @@
 </footer>
 
   <!-- ================ End footer Area ================= -->
-
-  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js" type="text/javascript"></script>
+  <script src="js/popper.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/jquery.slicknav.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="js/googleMapAPI.js"></script>
   <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
   <script src="vendors/sticky/jquery.sticky.js"></script>
@@ -393,7 +497,11 @@
 	<script src="js/mail-script.js"></script>
   <script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>	
   <script src="js/main.js"></script>
-  <script src="js/googleMapAPI.js"></script>
+  <script src="js/heroAnimation.js"></script>
+  <script src="js/logoAnimation.js"></script>
+  <script src="js/anime.js"></script>
+  <script src="js/onScrollAnimation.js"></script>
+  
  
   
   
